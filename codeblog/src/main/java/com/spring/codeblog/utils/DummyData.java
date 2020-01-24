@@ -36,13 +36,11 @@ public class DummyData {
         postList.add(post1);
         postList.add(post2);
 
+        for(Post post: postList) {
+            Post postSaved = codeBlogRepository.save(post);
+            System.out.println(postSaved.getId());
+        }
+
     }
-
-
-
-
-
-
-
 
 }
